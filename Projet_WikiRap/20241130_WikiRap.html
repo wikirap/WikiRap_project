@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Multimédia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .container {
+            padding: 10px;
+        }
+        img, video, audio {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        .thumbnail {
+            cursor: pointer;
+            max-width: 150px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Freeze Corleone démolit le ministre de l'Intérieur !</h1>
+        <p>ADC, acronyme de L'attaque des clones, est le troisième 
+		   album du rappeur français Freeze Corleone commercialisé 
+		   à partir du 11 septembre 2023.</p>
+
+        <h2>"J’reste loin du rap français, comme si j’habite le Montana
+			 Aussi wavy que Montana, au mic j’ai les techniques de Montana
+			 Chaque projet, attendu comme “Turbo Bandana"</h2>
+        <img id="mainImage" src="images/photo1.jpg" alt="Image principale">
+        <div>
+            <img src="images/photo2.jpg" alt="Miniature 1" class="thumbnail" onclick="changeImage('images/photo2.jpg')">
+            <img src="images/photo3.jpg" alt="Miniature 2" class="thumbnail" onclick="changeImage('images/photo3.jpg')">
+        </div>
+		<p>WikiRap, pop Africa</p>
+		
+        <h2>Le rappeur français se lâche sur ses punch : Gérard Darmanin !</h2>
+        <video controls>
+            <source src="videos/video1.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+
+        <h2>Voici mon coup de coeur sur l'album ADC :</h2>
+        <audio controls>
+            <source src="audios/audio1.mp3" type="audio/mp3">
+            Votre navigateur ne supporte pas la lecture audio.
+        </audio>
+		
+		
+		<p>à bientôt l'équipe</p>
+		<p>une nouvelle rubrique chaque semaine</p>
+		<p>wikiRap Africa!</p>
+    </div>
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+    </script>
+</body>
+</html>
